@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Password Generator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <!-- <h1 class="title">Password Generator</h1> -->
+       
+        <div class="pw-container">
+            <div class="pw-header">
+                <div class="pw" id="pw"></div>
+                <button class ="pw-button" id="copy">Copy</button>
+            </div>
+            <div class="pw-body">
+                <div class="form-control">
+                    <lable for="len">Password Length</lable>
+                    <input id="len" value="4" type="number" min="4" max="15">
+                </div>
+                <div class="form-control">
+                    <lable for="upper">Contain uppercase letters</lable>
+                    <input id ="upper" type="checkbox">
+                </div>
+                <div class="form-control">
+                    <lable for=lower">Contain lowercase letters</lable>
+                    <input id="lower" type="checkbox">
+                </div>
+                <div class="form-control">
+                    <lable for="number">Contain numbers</lable>
+                    <input id="number" type="checkbox">
+                </div>
+                <div class="form-control">
+                    <lable for="symbol">Contain symbols</lable>
+                    <input id="symbol" type="checkbox">
+                </div>
+                <button class="generate" id="generate">
+                    Generate password
+                </button>
+            </div>
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>

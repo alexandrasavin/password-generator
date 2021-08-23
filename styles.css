@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #222831;
+    color: #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* .title {
+    position: absolute;
+    top: 7rem;
+    letter-spacing: 0.2rem;
+    word-spacing: 1rem;
+    text-shadow: 2px 3px rgba(0, 0, 0, 0.5);
+} */
+
+.pw-container {
+    background-color: #393E46;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 400px;
+}
+
+.pw-header {
+    padding: 1rem;
+    position: relative;
+}
+
+.pw {
+    background-color: #222831;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+}
+
+.pw-body {
+    padding: 0 1rem 1rem;
+}
+
+.pw-button {
+    background-color: #EEEEEE;
+    color: #00ADB5;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 0.45rem 0.6rem;
+    font-family: inherit;
+    position: absolute;
+    right: 1.3rem;
+    top: 1.5rem;
+    transform: translate(0, 20%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+}
+
+.pw-button:hover{
+    opacity: 1;
+    transform: translate(0, 0%);
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+
+.generate {
+    display: block;
+    background-color: #00ADB5;
+    border: none;
+    color:#EEEEEE;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.generate:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
